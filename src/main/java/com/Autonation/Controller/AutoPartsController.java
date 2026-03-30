@@ -73,6 +73,7 @@ public class AutoPartsController {
 		partService.deleteAutoPart(name);
 		return (ResponseEntity<Long>) ResponseEntity.ok();
 
+
 	}
 
 }
