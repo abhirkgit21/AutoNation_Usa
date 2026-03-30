@@ -67,4 +67,12 @@ public class AutoPartsController {
 
 	}
 
+	@DeleteMapping(value = "/deletepart/{partname}")
+	public ResponseEntity<Long> deletePartsByName(@PathVariable Long name){
+
+		partService.deleteAutoPart(name);
+		return (ResponseEntity<Long>) ResponseEntity.ok();
+
+	}
+
 }
