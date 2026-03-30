@@ -57,4 +57,10 @@ public class CarsController {
 		return ResponseEntity.ok("Cars with Id " + carId + " car delete successfully");
 	}
 
+	public ResponseEntity<String> newCar(@PathVariable Long carId){
+		carServices.getAllCars();
+		return ResponseEntity.ok("car add");
+
+	}
+
 }
